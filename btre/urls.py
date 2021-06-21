@@ -19,6 +19,7 @@ from django.urls.conf import include
 
 urlpatterns = [
     path('', include('pages.urls')),
+    path('listings/',include('listings.urls')),
     path('admin/', admin.site.urls),
 ]# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-ljvt)exu*w3v@a=#3ez-2e^yu37$=o7_)%#)(=wjl5xu9zfum%'
