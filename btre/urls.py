@@ -22,5 +22,7 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('listings/',include('listings.urls')),
     path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls')),
+    path('contacts/', include('contacts.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-ljvt)exu*w3v@a=#3ez-2e^yu37$=o7_)%#)(=wjl5xu9zfum%'
